@@ -1,12 +1,15 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Import createRoot from react-dom/client
-import App from './App'; // Import your main App component
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';  // ✅ Bootstrap import
+import reportWebVitals from './reportWebVitals';
 
-
-const root = ReactDOM.createRoot(document.getElementById('root')); // Create a root
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App /> {/* Render your App component */}
+    <App />
   </React.StrictMode>
 );
+
+reportWebVitals();
